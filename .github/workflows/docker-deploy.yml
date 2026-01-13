@@ -125,6 +125,7 @@ jobs:
           image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME_LOWER }}:${{ github.sha }}
           format: spdx-json
           output-file: sbom.spdx.json
+          syft-version: v1.40.0
 
       - name: Upload SBOM
         uses: actions/upload-artifact@v4
