@@ -11,6 +11,7 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME_LOWER: ayoub-hm/devops-tp-docker-hammou-ayoub
 
 jobs:
   security-analysis:
